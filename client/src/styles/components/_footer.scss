@@ -1,0 +1,24 @@
+@import '../utils/variables.scss';
+
+@mixin footer_style {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 30px;
+        color: rgb(216, 216, 216);
+        bottom: 0;
+        position:fixed;
+        width: 100%;
+        text-align: center;
+        height: 33px;
+}
+
+.footer{
+ background-color: $menu-color;   
+@include footer_style()
+}
+
+.footer-dark{
+background-color: black;
+color: white;
+@include footer_style()
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+.searchLanding{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tarjeta{
+    background-color: rgb(249, 163, 83);
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+.formandlist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.alllist{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.aws-btn{
+    --button-default-height: 48px !important;
+    --button-default-font-size: 14px !important;
+    --button-default-border-radius: 6px !important;
+    --button-horizontal-padding: 20px !important;
+    --button-raise-level: 5px !important;
+    --button-hover-pressure: 2 !important;
+    --transform-speed: 0.185s !important;
+    --button-secondary-color: #206bf5 !important;
+    --button-secondary-color-dark: #fcc050 !important;
+    --button-secondary-color-light: #dbdbdb !important;
+    --button-secondary-color-hover: #000000 !important;
+    --button-secondary-border: 4px solid black !important;
+      margin: 20px 30px !important;
+    }
+
+    .viewland{
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: white;
+    
+    }

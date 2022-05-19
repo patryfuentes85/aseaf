@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter} from 'react-router-dom';
+import './styles/styles.scss'
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
+import { useState } from 'react';
+import {themeContext} from './context/themeContext';
+import {userContext} from './context/userContext';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//para aplicar el modo noche, lo pasamos a traves de theme context
+const [theme, setTheme] = useState("");
+  const toggleTheme = () => theme===""?setTheme("-dark"):setTheme("");
+  const [user, setUser] = useState(""); //hook UseState
+
+  const themeData = {
+    theme,
+    toggleTheme
+  }
+
+  //login
+const login = (name) =>{
+  setUser(name);
 }
 
-export default App;
+//logout
+const logout = () =>{
+ setUser("");
+}
+
+const userdata = {
+  user,
+  login,
+  logout
+}
+
+  return (
+    <div className="App">
+      <themeContext.Provider value={themeData}>
+      <BrowserRouter>
+      <userContext.Provider value={userdata}>
+      <Header/>
+      <Main/>
+      </userContext.Provider>
+      </BrowserRouter>
+      <Footer/>
+      </themeContext.Provider>
+    </div>
+  )
+}
+
+export default App

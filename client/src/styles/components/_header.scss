@@ -1,0 +1,75 @@
+// @import '../utils/variables.scss';
+
+// .header{
+//     background-color: $menu-color;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: space-evenly;
+//     border-bottom: 3px solid black;
+//     & > img {
+//             width: 3rem;
+//             margin-bottom: $spacing-lg;
+//             margin-top: $spacing-md;
+//         }
+//         & > .user{
+//             display: flex;
+//             & > p {
+//                 color: $text-color;
+//                 margin-right: $spacing-md;
+//             }
+//         }
+// }
+@import '../utils/variables.scss';
+@mixin header_style {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    & > img {
+            width: 3rem;
+            margin-bottom: $spacing-lg;
+            margin-top: $spacing-md;
+        }
+        & > .user{
+            display: flex;
+            & > p {
+                color: $text-color;
+                margin-right: $spacing-md;
+            }
+        }
+}
+.header{
+    background-color: $menu-color;
+    @include header_style();
+}
+.header-dark{
+    // background-color: $menu-color-dark;
+    background-color:black;
+    @include header_style();
+}
+
+#extras{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 950px) {
+    #extras {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loguser{
+        margin: 0 5px;
+    }
+  }

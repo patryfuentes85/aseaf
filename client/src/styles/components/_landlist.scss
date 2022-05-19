@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+.landstarjeta{
+    width: 100%;
+    max-width: 400px;
+    min-height: 300px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 7px solid rgb(7, 7, 7);
+    border-radius: 30%;
+    // background-image: linear-gradient(to bottom, #eb1111, #ec4d00, #ec6e00, #ea8a07, #e8a323);
+
+    font-family: 'Koulen', cursive;
+    font-size: 1.5rem;
+    -webkit-box-shadow: 30px -22px 42px 14px rgba(159,33,33,0.79); 
+box-shadow: 30px -22px 42px 14px rgba(159,33,33,0.79);
+ }
+
+.landstarjeta li{
+    h1 {
+        color: rgb(2, 1, 1);
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      }
+}
+
+.paginacion{
+    text-align: center;
+  }
+  
+  .current{
+    margin-top: 1px;
+    margin-bottom: 35px;
+  }
+
+  #divlandlist{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(231, 180, 180);
+  }
+
+  .btn-class{
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none; /* for button */
+     -webkit-appearance: button; /* for input */
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }

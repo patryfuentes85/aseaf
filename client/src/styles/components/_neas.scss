@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+@import '../utils/mixins.scss';
+
+.neastarjeta{
+    width: 100%;
+    max-width: 400px;
+    min-height: 300px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(7, 7, 7);
+    border-radius: 60px;
+    
+    // background-color: rgb(141, 242, 187);
+    background-color: rgb(255, 198, 124);
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 1.3rem;
+    box-shadow: 17px 17px 27px 11px rgba(200, 109, 109, 0.76);
+      -webkit-box-shadow: 17px 17px 27px 11px rgba(200, 109, 109, 0.76);
+      -moz-box-shadow: 17px 17px 27px 11px rgba(200, 109, 109, 0.76);
+}
+
+.neastarjeta li{
+  color:rgb(0, 0, 0)
+}
+
+.paginacion{
+  text-align: center;
+  background-color: rgb(227, 180, 180);
+
+}
+
+.current{
+  margin-top: 1px;
+  margin-bottom: 35px;
+}
+
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.aws-btn-neas {
+  --button-default-height: 48px !important;
+  --button-default-font-size: 14px !important;
+  --button-default-border-radius: 6px !important;
+  --button-horizontal-padding: 20px !important;
+  --button-raise-level: 5px !important;
+  --button-hover-pressure: 2 !important;
+  --transform-speed: 0.185s !important;
+  --button-secondary-color: #206bf5 !important;
+  --button-secondary-color-dark: #ebe853 !important;
+  --button-secondary-color-light: #dbdbdb !important;
+  --button-secondary-color-hover: #000000 !important;
+  --button-secondary-border: 4px solid #000000 !important;
+    font-size: 2.0rem !important;
+    margin: 20px 0 !important;
+  }
+
+  #divneas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(231, 180, 180);
+  }
+
+
